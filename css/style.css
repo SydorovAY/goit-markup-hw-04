@@ -74,7 +74,7 @@ img {
 	width: 1158px;
 	padding: 0 15px 0 15px;
 	margin: 0 auto;
-	padding: 0;
+	padding: 0 15px;
 }
 
 .visually-hidden {
@@ -318,6 +318,46 @@ img {
 .social-list-item .link:hover,
 .social-list-item .link:focus {
 	background: var(--Success-messages-color);
+}
+
+/* ===== Customers ====== */
+
+.section-customers {
+	padding: 120px 0;
+}
+
+.section-customers .conteiner {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.customers-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	letter-spacing: 0.03em;
+	margin: 0 auto;
+	margin-bottom: 72px;
+}
+
+.customer-list {
+	display: flex;
+	
+}
+
+.customers-item .link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid var(--Helper-text-color);
+	border-radius: 4px;
+	width: 168px;
+	height: 88px;
+}
+
+.customers-item:not(:last-child){
+	margin-right: 24px;
 }
 
 /* ================ footer ============= */
