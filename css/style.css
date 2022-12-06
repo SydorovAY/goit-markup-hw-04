@@ -73,8 +73,8 @@ img {
 	align-items: center;
 	width: 1158px;
 	padding: 0 15px 0 15px;
-	margin: auto;
-	padding: auto;
+	margin: 0 auto;
+	padding: 0;
 }
 
 .visually-hidden {
@@ -170,7 +170,7 @@ img {
 	padding: 192px 0;
 	margin: 0 auto;
 
-	background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 		url(../images/bg_img/people_office.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -244,7 +244,7 @@ img {
 	margin-bottom: 72px;
 }
 .specialization-list {
-	flex-basis: calc(100 / 3 - 2 * var(--card-set-gap));
+	flex-basis: calc(100 / 3 - 48);
 }
 
 .specialization-list > .item + .item {
@@ -269,7 +269,7 @@ img {
 }
 
 .team-list {
-	flex-basis: calc(100 / 4 - 3 * var(--card-set-gap));
+	flex-basis: calc(100 / 4 - 72);
 }
 
 .team-list > .card {
@@ -282,7 +282,7 @@ img {
 }
 
 .card-content {
-	padding: 32px 0;
+	padding: 32px 16px 36px;
 }
 
 .card-title {
@@ -291,22 +291,89 @@ img {
 	margin-bottom: 8px;
 }
 
+.card-content .text {
+	font-weight: 600;
+	margin-bottom: 12px;
+}
+
+.social-list-item:not(:last-child) {
+	margin-right: var(--card-set-gap);
+}
+
+.social-list-item {
+	display: flex;
+	display: block;
+}
+
+.social-list-item .link {
+	display: flex;
+	background-color: var(--Focused-link-color);
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-list-item .link:hover,
+.social-list-item .link:focus {
+	background: var(--Success-messages-color);
+}
+
 /* ================ footer ============= */
 
 .footer {
 	background-color: var(--Headings-color);
 	padding: 100px 0;
+	min-width: 1440px;
 }
 
-.summary {
+.footer .conteiner {
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.footer-summary {
 	color: var(--Subtle-backgrounds-color);
 	width: 264px;
+	margin-right: 120px;
 }
 
 .footer .logo {
 	color: var(--backgrounds-Light-color);
 	display: block;
 	margin-bottom: 16px;
+}
+
+.footer-social {
+	display: flex;
+	flex-direction: column;
+	width: 208px;
+}
+
+.footer-social-media {
+	color: var(--bg-white-color);
+	letter-spacing: 0.02em;
+	margin-bottom: 16px;
+}
+
+.footer-social-item:not(:last-child) {
+	margin-right: 16px;
+}
+
+.footer-social-item .link {
+	display: flex;
+	background: rgba(255, 255, 255, 0.1);
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-social-item .link:hover,
+.footer-social-item .link:focus {
+	background: var(--Success-messages-color);
 }
 
 /* =================== portfolio ==================== */
@@ -357,7 +424,7 @@ img {
 /* ===== portfolio list ===== */
 
 .portfolio-list {
-	flex-basis: calc(100 / 3 - 48px);
+	flex-basis: calc(100 / 3 - 48);
 	flex-wrap: wrap;
 }
 
