@@ -521,7 +521,7 @@ img {
 	margin-bottom: 8px;
 }
 
-.portfolio-list>.item:hover,
-.portfolio-list>.item:focus {
+.portfolio-list .item:hover,
+.portfolio-list .item:focus {
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
