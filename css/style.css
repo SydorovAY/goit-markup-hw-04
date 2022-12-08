@@ -111,8 +111,8 @@ img {
 	margin-right: auto;
 }
 
-.site-nav .nav-list+.nav-list {
-	margin-left: 40px;
+.site-nav .nav-list:not(:last-child) {
+	margin-right: 40px;
 }
 
 .nav-link {
@@ -144,8 +144,8 @@ img {
 	letter-spacing: 0.02em;
 }
 
-.contacts .contacts-list+.contacts-list {
-	margin-left: 40px;
+.contacts-list:first-child {
+	margin-right: 40px;
 }
 
 .contacts-link {
@@ -271,8 +271,8 @@ img {
 	flex-basis: calc(100 / 3 - 48);
 }
 
-.specialization-list>.item+.item {
-	margin-left: var(--card-set-gap);
+.specialization-list>.item:not(:last-child) {
+	margin-right: var(--card-set-gap);
 }
 
 /* ===== section our team ===== */
@@ -303,8 +303,8 @@ img {
 	border-radius: 0px 0px 4px 4px;
 }
 
-.team-list>.card+.card {
-	margin-left: var(--card-set-gap);
+.team-list>.card:not(:last-child) {
+	margin-right: var(--card-set-gap);
 }
 
 .card-content {
@@ -352,12 +352,6 @@ img {
 	padding: 120px 0;
 }
 
-.section-customers .conteiner {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-}
-
 .customers-title {
 	font-weight: 700;
 	font-size: 36px;
@@ -395,7 +389,6 @@ img {
 
 .customers-logo {
 	fill: currentColor;
-	outline: auto red;
 }
 
 /* ================ footer ============= */
@@ -469,8 +462,8 @@ img {
 	margin-bottom: 72px;
 }
 
-.filter-nav .filter-nav-btn+.filter-nav-btn {
-	margin-left: 24px;
+.filter-nav .filter-nav-btn:not(:last-child) {
+	margin-right: var(--card-set-gap);
 }
 
 .butoon-filter {
