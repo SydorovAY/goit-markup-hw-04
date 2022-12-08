@@ -173,13 +173,13 @@ img {
 }
 
 .overlay {
-	max-width: 1600px;
+	max-width: 1440px;
 	height: 603px;
 	margin: 0 auto;
 	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 		url(../images/bg_img/people_office.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 }
 
